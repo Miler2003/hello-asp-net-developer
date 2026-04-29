@@ -11,6 +11,7 @@ if (app.Environment.IsDevelopment()) app.MapOpenApi();
 app.UseHttpsRedirection();
 
 
+
 app.MapGet("/", () => "WEB API is operational").WithName("GetDefaultResponse");
 
 app.Run();
