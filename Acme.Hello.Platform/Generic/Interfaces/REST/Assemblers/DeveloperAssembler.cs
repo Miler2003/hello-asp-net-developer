@@ -16,11 +16,11 @@ public static class DeveloperAssembler
     public static Developer? ToEntityFromRequest(GreetDeveloperRequest? request)
     {
         if (request is null 
-            || string.IsNullOrWhiteSpace(request.FirsName)
+            || string.IsNullOrWhiteSpace(request.FirstName)
             || string.IsNullOrWhiteSpace(request.LastName))
             return null;
         return new Developer(
-            firstName: request.FirsName,
+            firstName: request.FirstName,
             lastName: request.LastName);
     }
 }
